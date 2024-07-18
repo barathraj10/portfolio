@@ -1,0 +1,250 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    /* margin-top:50px; */
+}
+
+.navbar{
+    padding:0px;
+    
+    width:100%;
+    
+}
+.container-fluid{
+  background-color: rgb(0, 0, 0);
+  padding:20px;
+  position:relative;
+  color:white;
+  
+}
+.navbar-brand{
+  color:white;
+  transition:0.3s;
+  font-size:25px;
+  margin:5px;
+}
+.navbar-brand:hover{
+  color:rgb(179, 179, 179);
+}
+.nav-link{
+  color:rgb(255, 255, 255);
+  transition:0.5s;
+  font-size:20px;
+  position:relative;
+  left:350px; 
+  text-align: center  ;
+  border-bottom:0px; 
+  margin:5px 20px;
+  padding-bottom:0px; 
+}
+.nav-link:hover{
+  color:rgb(0, 162, 255);
+  font-size:22px;
+  border-bottom: solid 2px;
+}
+#title{
+    font-size:19px;
+    color:rgba(255, 255, 255, 0.651);
+}
+#name{
+    color:rgb(0, 174, 255);
+    text-shadow:3px 3px 30px;
+}
+#dp{
+    border-radius:100%;
+}
+.intro{
+    margin:100px 50px;
+    padding:150px 15px;
+    border-left:solid 2px;    
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin:50px 100px;
+  }
+  
+  .img-des {
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin:0px 15px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+  #desHead{
+    transition: 0.3s;
+    position:relative;
+    padding-bottom:5px;
+    z-index:-1;
+  }
+  #desHead:hover{
+      border-bottom: solid 3px rgb(241, 48, 80);
+    
+  }
+#description{
+    text-indent: 50px;
+    margin:40px 0px;
+}
+.tabs{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    font-size:18px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.tab-titles{
+    margin-right:20px;
+    cursor:pointer;
+    position:relative;
+}
+.tab-titles::after{
+    content:'';
+    width:0%;
+    height:3px;
+    background:rgb(241, 48, 80);
+    position:absolute;
+    left:0px;
+    bottom:-6px;
+    transition:0.3s;
+}
+.tab-titles.active-link::after{
+    width:50%;
+}
+
+/* .know{
+    margin:100px;
+    padding:30px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    }
+    
+    .skills, .edu, .lang{
+        margin:10px;
+        background-color: bisque;
+        color:green;
+        } */
+        
+        .know{
+            margin:50px 100px;
+            display:flex;
+            gap: 1rem;
+        }
+.know > div{
+    transition:0.5s;
+    flex:1;
+    padding:20px;
+    border-radius: 25px;
+    background-color:rgba(0, 174, 255, 0.267) ;
+     color:rgb(255, 255, 255);
+}
+.know h3{
+    text-align: center;
+}
+.know > div:hover{
+    transform:translateY(-10px); 
+    /* box-shadow: 0px 0px 30px white; */
+    /* flex:2;  */
+    
+}
+.know li {
+    list-style: none;
+    margin-bottom:20px;
+}
+
+.know li span{
+    font-size:12px;
+}
+.work-list{
+    display:flex;    
+    margin:50px 100px;
+}
+.work{
+    margin:10px;
+    transition:0.5s;
+    border-radius: 10px;
+}
+.work:hover{
+    box-shadow:0px 0px 10px;
+}
+.work-head{
+    text-align: center;
+    font-size:40px;
+}
+.work-list img{
+    width:100%;
+    position: center;
+}
+.layer{
+    margin-top:20px;
+    padding:10px;
+}
+.contact{
+    height:200px;
+    background-color: rgb(25, 130, 172);
+}
+.contact h1{
+    text-align: center;
+}
+.app{
+    text-align: center;
+    transition:0.3s;
+}
+.app:hover{
+    transform: translateY(-10px);
+    
+}
+.app button{
+    border:none;
+    width:auto;
+    background-color: transparent;
+}
+.app button img{
+    border-radius: 10px;
+    margin:0px 30px;
+}
+.social{
+    display:flex;
+    justify-content:center;
+    margiN-top: 50px;
+}
+.home{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:90px 50px ;
+}
+.home img{
+    height: auto;
+    width:80%;
+    border-radius: 100%;
+}
+.intro-des{
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+    margin:0px 15px;
+}
+
+
+
+/* ************First Letter Highlight***************** */
+.contact h1::first-letter{
+    color:rgb(241, 48, 80);
+    font-size:50px;
+}
+.work-head::first-letter{
+    color:rgb(241, 48, 80);
+    font-size:50px;
+}
+
+#desHead::first-letter{
+  color:rgb(241, 48, 80);
+  font-size:50px;
+}
